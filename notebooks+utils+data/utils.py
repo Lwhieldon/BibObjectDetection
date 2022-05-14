@@ -494,6 +494,65 @@ def file_len(fname):
       pass
   return i + 1
 
+def annotate(img, annot, color):
+    """
+    Add bib numbers and bib bounding boxes to an image
+    
+    Args
+        img (numpy array): image array of original from openCV .imread
+        annot (list): list of bib numbers and bounding boxes in the 
+            form [[<bib number>, [x, y, width, height]]]
+        color (array): RGB color array for annotation color
+        
+    Returns
+        Annotated image as numpy array
+    """
+    
+    # draw bouding box on original image
+    (x, y, w, h) = annot[1]
+    annot_img = cv.rectangle(img,(x,y),(x+w,y+h),color,5)
+    # add bib number to original image
+    rbn = annot[0]
+    cv.putText(annot_img, str(rbn), (x, y - 25), cv.FONT_HERSHEY_SIMPLEX, 1, color, 2)
+
+    return annot_img
+
+def get_true_annot(image, input_path, out_path):  
+    """
+    Read in the RBNR annotation file and return annotations
+    
+    Args
+        image (str): name of original image
+        input_path (str): path to directory of image
+        out_path (str): directory where results are saved
+        
+    Returns
+        List of annotations in format 
+        [[<bib number>, [x, y, width, height]]]
+    """
+    
+    # load annotation file
+    f = sio.loadmat(input_path + image + '.mat')
+
+    #get bounding boxes and bib numbers
+    boxes = f['tagp']
+    numbers = f['number'].flatten()
+
+    bib_annots = []
+    for i, box in enumerate(boxes):
+        #convert box values to int
+        (y1, y2, x1, x2) = [int(i) for i in box]
+        
+        # add rbn and formated bounding box to list
+        bib_annots.append([numbers[i], [x1, y1, x2-x1, y2-y1]])
+        
+        # add true bib numbers to file
+        true_file = open(out_path + 'bib_numbers.txt', 'a')
+        true_file.writelines(f"{image},{numbers[i]}\n")
+        true_file.close()
+    
+    return bib_annots
+
 #customize iPython writefile so we can write variables
 from IPython.core.magic import register_line_cell_magic
 
@@ -651,41 +710,8 @@ def get_rbns(img, bd_configPath, bd_weightsPath,bd_classes,nr_configPath,nr_weig
             return final_bibs
     else: return None
 
-def get_true_annot(image, input_path, out_path):  
-    """
-    Read in the RBNR annotation file and return annotations
-    
-    Args
-        image (str): name of original image
-        input_path (str): path to directory of image
-        out_path (str): directory where results are saved
-        
-    Returns
-        List of annotations in format 
-        [[<bib number>, [x, y, width, height]]]
-    """
-    
-    # load annotation file
-    f = sio.loadmat(input_path + image + '.mat')
 
-    #get bounding boxes and bib numbers
-    boxes = f['tagp']
-    numbers = f['number'].flatten()
 
-    bib_annots = []
-    for i, box in enumerate(boxes):
-        #convert box values to int
-        (y1, y2, x1, x2) = [int(i) for i in box]
-        
-        # add rbn and formated bounding box to list
-        bib_annots.append([numbers[i], [x1, y1, x2-x1, y2-y1]])
-        
-        # add true bib numbers to file
-        true_file = open(out_path + 'bib_numbers.txt', 'a')
-        true_file.writelines(f"{image},{numbers[i]}\n")
-        true_file.close()
-    
-    return bib_annots
 
 def show_local_mp4_video(file_name, width=640, height=480):
   import io
