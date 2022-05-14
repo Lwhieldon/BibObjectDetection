@@ -39,7 +39,7 @@ https://youtu.be/xfVfr0KmhYY
 bib-detector
 |__ notebooks-utils-data
 |   |__ 01- Prepocessing & Training SVHN YOLOv4-tiny Darknet.ipynb  
-|   |__ 02 - Digit Detector Validation SVHN Training Only.ipynb 
+|   |__ 002 - Digit Detection Validation Using RBNR Data.ipynb 
 |   |__ 03 - Preprocessing Racing Bib Numbers (RBNR) Datasets.ipynb
 |   |__ 04 - Run Yolov4 Tiny on RBNR Data.ipynb
 |   |__ 05 - Bib Detection Validation & Demo.ipynb
