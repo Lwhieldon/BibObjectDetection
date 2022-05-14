@@ -47,6 +47,8 @@ bib-detector
 |   |__ VIDEO0433.mp4
 |   |__ output_marathon.mp4
 |   |__ BibDetectorSample.jpeg
+|__ presentation
+|   |__ RaceBibDetection_Presentation.pdf
 weights-classes
 |   |__ SVHN_obj.names
 |   |__ RBNR_obj.data 
