@@ -22,10 +22,11 @@ For future work, I would like to continue to train the model with datasets from 
 
 ## Sample Video Output of Detection
 
-| [![Race Bib Detection](https://github.com/Lwhieldon/BibObjectDetection/blob/main/notebooks+utils+data/output_marathon_Moment.jpg)](https://player.vimeo.com/video/709898540?h=43a1ff52f7&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479 "Yolo v4") 
+<p align="center">
+<iframe src="https://giphy.com/embed/0Y5eFhJBHuIlPH3tVA" width="270" height="480" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+</p>
 
 
-<div style="padding:75% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/709898540?h=43a1ff52f7&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen style="position:absolute;top:0;left:0;width:75%;height:75%;" title="output_marathon.mp4"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
 
 ## Data Details
 
