@@ -1,4 +1,5 @@
+*.pptx
 .tmp.driveupload/
 .ipynb_checkpoints/
 __pycache__
-.pptx
+
