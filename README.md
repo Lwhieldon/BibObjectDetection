@@ -22,10 +22,7 @@ For future work, I would like to continue to train the model with datasets from 
 
 ## Sample Video Output of Detection
 
-<p align="center">
-<iframe src="https://giphy.com/embed/0Y5eFhJBHuIlPH3tVA" width="270" height="480" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
-</p>
-
+![gif](https://github.com/Lwhieldon/BibObjectDetection/blob/main/notebooks+utils+data/marathon_output.gif)
 
 
 ## Data Details
