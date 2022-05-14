@@ -17,16 +17,9 @@ This repo investigates the use of Convolutional Neural Networks (CNN) and specif
 
 For future work, I would like to continue to train the model with datasets from both the Street View House Numbers & more runner images with racing bibs. Additionally, I would like to transfer the learning weights to edge compute hardware (i.e. NVIDIA's Jetson Nano or Raspberr Pi) to display a use case for edge computing with live streaming video capture.
 
-<br>
-<br>
-
 ## Sample Video Output of Detection
 
-<p align="center">
-
 ![gif](https://github.com/Lwhieldon/BibObjectDetection/blob/main/notebooks+utils+data/marathon_output.gif)
-
-</p>
 
 ## Data Details
 
