@@ -22,8 +22,11 @@ For future work, I would like to continue to train the model with datasets from 
 
 ## Sample Video Output of Detection
 
+<p align="center">
+
 ![gif](https://github.com/Lwhieldon/BibObjectDetection/blob/main/notebooks+utils+data/marathon_output.gif)
 
+</p>
 
 ## Data Details
 
