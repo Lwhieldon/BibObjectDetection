@@ -1,5 +1,5 @@
 <p align="center">
-<img src="https://github.com/Lwhieldon/BibObjectDetection/blob/main/notebooks+utils+data/BibDetectorSample.jpeg?raw=true" widght=500 height=300 />
+<img src="https://github.com/Lwhieldon/BibObjectDetection/blob/main/notebooks+utils+data/BibDetectorSample.jpeg?raw=true" height=400 />
 </p>
 
 # Natural Scene Bib Number Object Detection
