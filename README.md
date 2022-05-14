@@ -70,6 +70,7 @@ README.md
 - N. Boonsim, “Racing bib number localization on complex backgrounds,” WSEAS Trans. Syst. Control, vol. 13, pp. 226–231, 2018.
 - RoboFlow: https://blog.roboflow.com/train-yolov4-tiny-on-custom-data-lighting-fast-detection/
 - OpenCV: https://opencv.org/
+- NVIDIA cuDNN: https://developer.nvidia.com/cudnn
 
 
 
