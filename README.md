@@ -22,6 +22,9 @@ For future work, I would like to continue to train the model with datasets from 
 
 ## Sample Video Output of Detection
 
+| [![Yolo v4](https://user-images.githubusercontent.com/4096485/101360000-1a33cf00-38ae-11eb-9e5e-b29c5fb0afbe.png)](https://player.vimeo.com/video/709898540?h=43a1ff52f7&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479 "Yolo v4") 
+
+
 <div style="padding:75% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/709898540?h=43a1ff52f7&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen style="position:absolute;top:0;left:0;width:75%;height:75%;" title="output_marathon.mp4"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
 
 ## Data Details
