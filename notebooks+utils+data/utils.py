@@ -651,6 +651,41 @@ def get_rbns(img, bd_configPath, bd_weightsPath,bd_classes,nr_configPath,nr_weig
             return final_bibs
     else: return None
 
+def get_true_annot(image, input_path, out_path):  
+    """
+    Read in the RBNR annotation file and return annotations
+    
+    Args
+        image (str): name of original image
+        input_path (str): path to directory of image
+        out_path (str): directory where results are saved
+        
+    Returns
+        List of annotations in format 
+        [[<bib number>, [x, y, width, height]]]
+    """
+    
+    # load annotation file
+    f = sio.loadmat(input_path + image + '.mat')
+
+    #get bounding boxes and bib numbers
+    boxes = f['tagp']
+    numbers = f['number'].flatten()
+
+    bib_annots = []
+    for i, box in enumerate(boxes):
+        #convert box values to int
+        (y1, y2, x1, x2) = [int(i) for i in box]
+        
+        # add rbn and formated bounding box to list
+        bib_annots.append([numbers[i], [x1, y1, x2-x1, y2-y1]])
+        
+        # add true bib numbers to file
+        true_file = open(out_path + 'bib_numbers.txt', 'a')
+        true_file.writelines(f"{image},{numbers[i]}\n")
+        true_file.close()
+    
+    return bib_annots
 
 def show_local_mp4_video(file_name, width=640, height=480):
   import io
