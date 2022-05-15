@@ -31,8 +31,6 @@ https://youtu.be/xfVfr0KmhYY
 
 - <a href=http://ufldl.stanford.edu/housenumbers>Street View House Numbers (SVHN) Dataset</a>: This dataset was curated for the NIPS Workshop on Deep Learning and Unsupervised Feature Learning from 2011. For additional information regarding the dataset, please contact streetviewhousenumbers@gmail.com.
 - <a href=https://people.csail.mit.edu/talidekel/RBNR.html>Racing Bib Number Recognition Dataset</a>: Supporting dataset for the <a href=https://people.csail.mit.edu/talidekel/papers/RBNR.pdf>published paper</a> leveraging a different approach than we cover here.
-<br>
-<br>
 
 ## Table of Contents
 ```
@@ -58,8 +56,6 @@ weights-classes
 |   |__ RBNR_custom-yolov4-tiny-detector_best.weights
 README.md
 ```
-<br>
-<br>
 
 ## References
 
