@@ -15,7 +15,7 @@ This repo investigates the use of Convolutional Neural Networks (CNN) and specif
 - 96% mAP on <b>Street View House Number</b> dataset training
 - 99% mAP on <b>Race Bib Detection</b> in Natural Scene dataset training
 
-For future work, I would like to continue to train the model with datasets similar to the Street View House Numbers & more Race Bib Number images. Additionally, I would like to transfer the learning weights to edge compute hardware (i.e. NVIDIA's Jetson Nano or Raspberr Pi) to display a use case for edge computing with live streaming video capture.
+For future work, I would like to continue to train the model with datasets similar to the Street View House Numbers & more Race Bib Number images. Adjusting the configuration files to include more batches tweaks within the layers could be beneficial. Additionally, I would like to transfer the learning weights to edge compute hardware (i.e. NVIDIA's Jetson Nano or Raspberr Pi) to display a use case for edge computing with live streaming video capture.
 
 ## Sample Video Output of Detection
 
