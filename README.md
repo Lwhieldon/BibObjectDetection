@@ -8,14 +8,14 @@ Using machine learning algorithms, including OpenCV, NIVIDIA's cuDNN, &amp; Dark
 <br>
 ## Overview and Background
 
-Racing Bib Number (RBN) detection and recognition contains the interesting tasks of both location of bib attached to a person in a natural scene & inferring the text detection on the bib. Since text recognition is required, additional steps of training is needed: Finding the area of the bib on a person and then inferring the numbers on the bib thereafter. This project uses the research & experience from prior implementations to apply a working model to detect race bib numbers in both images & video. 
+Racing Bib Number (RBN) detection and recognition contains the interesting tasks of both finding the location of bib attached to a person in a natural scene & then inferring the text detection on the bib itself. To break this tasks down further, text recognition is requires steps of training, including finding the area of the bib on a person and then inferring the numbers on the bib thereafter. This project uses the research & experience from prior implementations to apply a working Convoltuional Neural Network (CNN) to detect race bib numbers in both images & video. 
 
 This repo investigates the use of Convolutional Neural Networks (CNN) and specifically, <a href=https://developer.nvidia.com/cudnn>NVIDIA's cuDNN</a> & <a href=https://github.com/AlexeyAB/darknet>Darknet's You Only Look Once ver. 4 (YOLOv4),</a> to detect Racing Bib Numbers (RBNR) in a natural image scene. Leveraging publically available & labeled datasets from previous research  (please see reference section below for addt'l information), I achieve a mean average precision (mAP) on the following:
 
-- 96% mAP on Street View House Number dataset training
-- 99% mAP on Bib Detection in Natural Scene dataset training
+- 96% mAP on <b>Street View House Number</b> dataset training
+- 99% mAP on <b>Race Bib Detection</b> in Natural Scene dataset training
 
-For future work, I would like to continue to train the model with datasets from both the Street View House Numbers & more runner images with racing bibs. Additionally, I would like to transfer the learning weights to edge compute hardware (i.e. NVIDIA's Jetson Nano or Raspberr Pi) to display a use case for edge computing with live streaming video capture.
+For future work, I would like to continue to train the model with datasets similar to the Street View House Numbers & more Race Bib Number images. Additionally, I would like to transfer the learning weights to edge compute hardware (i.e. NVIDIA's Jetson Nano or Raspberr Pi) to display a use case for edge computing with live streaming video capture.
 
 ## Sample Video Output of Detection
 
@@ -38,7 +38,7 @@ https://youtu.be/xfVfr0KmhYY
 ```
 BibObjectDetection
 |__ notebooks-utils-data
-|   |__ 01- Prepocessing & Training SVHN YOLOv4-tiny Darknet.ipynb  
+|   |__ 01 - Prepocessing & Training SVHN YOLOv4-tiny Darknet.ipynb  
 |   |__ 02 - Digit Detection Validation Using RBNR Data.ipynb 
 |   |__ 03 - Preprocessing Racing Bib Numbers (RBNR) Datasets.ipynb
 |   |__ 04 - Run Yolov4 Tiny on RBNR Data.ipynb
@@ -71,7 +71,7 @@ README.md
 - RoboFlow: https://blog.roboflow.com/train-yolov4-tiny-on-custom-data-lighting-fast-detection/
 - OpenCV: https://opencv.org/
 - NVIDIA cuDNN: https://developer.nvidia.com/cudnn
-
+- Eric Bayless: https://github.com/ericBayless/bib-detector
 
 
 ## Project Curation
