@@ -8,7 +8,7 @@ Using machine learning algorithms, including OpenCV, NIVIDIA's cuDNN, &amp; Dark
 <br>
 ## Overview and Background
 
-Racing Bib Number (RBN) detection and recognition contains the interesting tasks of both finding the location of bib attached to a person in a natural scene & then inferring the text detection on the bib itself. To break this tasks down further, text recognition is requires steps of training, including finding the area of the bib on a person and then inferring the numbers on the bib thereafter. This project uses the research & experience from prior implementations to apply a working Convoltuional Neural Network (CNN) to detect race bib numbers in both images & video. 
+Racing Bib Number (RBN) detection and recognition contain the interesting tasks of both finding the location of bib attached to a person in a natural scene & then inferring the text detection on the bib itself. To break these tasks down further, text recognition requires training steps, including finding the area of the bib on a person and then inferring the numbers on the bib. This project uses the research & experience from prior implementations to apply a working Convoltuional Neural Network (CNN) to detect race bib numbers in both images & video. 
 
 This repo investigates the use of Convolutional Neural Networks (CNN) and specifically, <a href=https://developer.nvidia.com/cudnn>NVIDIA's cuDNN</a> & <a href=https://github.com/AlexeyAB/darknet>Darknet's You Only Look Once ver. 4 (YOLOv4),</a> to detect Racing Bib Numbers (RBNR) in a natural image scene. Leveraging publically available & labeled datasets from previous research  (please see reference section below for addt'l information), I achieve a mean average precision (mAP) on the following:
 
